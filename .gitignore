@@ -1,0 +1,14 @@
+/vendor/*
+!/vendor/.htaccess
+!/vendor/autoload.php
+!/vendor/ppbtlib
+/node_modules
+/views/js/*
+!/views/js/index.php
+/views/css/*
+!/views/css/index.php
+/views/img/logos/*
+!/views/img/logos/index.php
+config_*.xml
+.php_cs.cache
+.idea
