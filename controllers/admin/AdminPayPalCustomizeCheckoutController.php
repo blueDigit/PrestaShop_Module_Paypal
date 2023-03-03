@@ -355,7 +355,7 @@ class AdminPayPalCustomizeCheckoutController extends AdminPayPalController
                 'label' => $this->l('Venmo'),
                 'name' => PaypalConfigurations::VENMO_OPTION,
                 'is_bool' => true,
-                'hint' => $this->l(''),
+                'hint' => '',
                 'values' => [
                     [
                         'id' => PaypalConfigurations::VENMO_OPTION . '_on',
@@ -778,7 +778,7 @@ class AdminPayPalCustomizeCheckoutController extends AdminPayPalController
 
                                 if (false == $value) {
                                     $msg = $this->l('An error occurred while creating the webhook. This feature has been automatically disabled.');
-                                    $msg .= $this->l('Please enbale it via the “Experience” tab-> “Advanced mode”-> “Enable event notifications”.');
+                                    $msg .= $this->l('Please enable it via the “Experience” tab-> “Advanced mode”-> “Enable event notifications”.');
                                     $msg .= $this->l('If the problem persists please contact our support service.');
                                     $this->errors[] = $msg;
                                 }

@@ -904,7 +904,7 @@ class PayPal extends \PaymentModule implements WidgetInterface
         $paymentOption->setAction(
             sprintf(
                 'javascript:alert(\'%s\');',
-                $this->l('Should use the SEPS payment button')
+                $this->l('Should use the SEPA payment button')
             )
         );
         $paymentOption->setAdditionalInformation($this->initSepaButton()->render());
